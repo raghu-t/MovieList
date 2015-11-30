@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titeactionbar">#3F51B5</color>
+    <color name="background">#E8EAF6</color>
+    <color name="background2">@android:color/black</color>
+    <color name="backgroundcontroller">#CC5C6BC0</color>
+    <!-- #CCE8EAF6</color> -->
+    <color name="textcolor">@android:color/white</color>
+    <color name="textcolordark">#5C6BC0</color>
+    <color name="primary">#009688</color>
+
+    <color name="primary_dark">#00796B</color>
+
+
+    <color name="colorPrimary">#009688</color>
+
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="accent">#7ABA7A</color>
+    <color name="text_primary">#D9000000</color>
+    <color name="text_secondary">#D9000000</color>
+
+    <color name="color1">#3300FF00</color>
+    <color name="color2">#33FF0000</color>
+    <color name="color3">#33FFFF00</color>
+    <color name="color4">#E600FF00</color>
+    <color name="color5">#E600FF00</color>
+</resources>

@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lokeshkalal.myapplication.ProductDescriptionActivity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/addlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tag_edit_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Add Tags"
+                android:padding="15dp"
+                android:textColor="@color/primary" />
+
+            <ImageView
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/add"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_item"
+            android:orientation="horizontal"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_background"
+            android:layout_margin="10dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tag_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/primary"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:capitalize="characters"
+                />
+            <Button
+                android:id="@+id/delete_tag"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/can"
+                android:layout_gravity="right|center_vertical"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/add_reciept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add Product Photo"
+            android:textColor="@color/primary"
+            android:background="@drawable/btn_background"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/upper_layout"
+            android:clickable="false"/>
+
+        <ImageView
+            android:id="@+id/product_photo"
+            android:clickable="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/takephoto_ripple"
+            android:layout_below="@+id/add_reciept"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"/>
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:text="DONE"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

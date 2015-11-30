@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:elevation="16dp"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@+id/location"
+                android:textColor="#673ab7"
+                android:textSize="21dp"></TextView>
+
+            <TextView
+                android:id="@+id/item_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:elevation="16dp"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@+id/location"
+                android:textColor="@color/material_blue_grey_800"
+                android:textSize="14dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:elevation="6dp"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="Date of Purchage"
+                    android:textColor="#673ab7"
+                    android:textSize="15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/item_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:elevation="6dp"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="@+id/location"
+                    android:textSize="15dp"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_warranty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:elevation="6dp"
+                android:gravity="start"
+                android:maxLines="1"
+                android:textSize="20dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.example.lokeshkalal.myapplication.RoundedImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:scaleType="fitXY">
+
+            </com.example.lokeshkalal.myapplication.RoundedImageView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
